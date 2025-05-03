@@ -8,13 +8,17 @@ body {
     height: 100vh;
     margin: 0;
     padding: 20px;
-  }
-
-  body {
-    background-color: #121212;
-    color: #ffffff;
     font-family: 'Lora', serif;
+    background: linear-gradient(-45deg, #1F1F1F, #2B2B2B, #4e3a2f, #7a5b34);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
   }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }  
   
   .profile-name {
     font-family: 'Montserrat', sans-serif;
